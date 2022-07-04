@@ -53,7 +53,7 @@
         <!-- Портфолио -->
         <section class="portfolio-secttion section">
             <div class="container">
-                <h1 class="section__title hidden">Portfolio</h1>
+                <h1 class="section__title title-hiding">Portfolio</h1>
                 <ul class="btn-list list">
                     <li class="btn-list__item"><button type="button" class="button btn-list__btn pointer">Все</button></li>
                     <li class="btn-list__item"><button type="button" class="button btn-list__btn pointer">Веб-сайты</button></li>
@@ -65,7 +65,13 @@
                     <li class="portfolio-list__item">
                         <a href="" class="portfolio-list__link link">
                             <div class="portfolio-list__wrap">
-                                <img src="./images/portfolio-img-1.jpg" alt="Ноутбук" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/portfolio-img-1.jpg 1x, ./images/portfolio-img-1-2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/portfolio-tablet-1.jpg 1x, ./images/portfolio-tablet-1-2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/portfolio-mobile-1.jpg 1x, ./images/portfolio-mobile-1-2x.jpg 2x" media="(min-width: 320px)" />
+                                    <img src="./images/portfolio-mobile-1.jpg" alt="Ноутбук" width="370">
+                                </picture>
+
                                 <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -79,7 +85,15 @@
                     <li class="portfolio-list__item">
                             <a href="" class="portfolio-list__link link">
                                 <div class="portfolio-list__wrap">
-                                    <img src="./images/portfolio-img-2.jpg" alt="Баскетболисты" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio-img-2.jpg 1x, ./images/portfolio-img-2-2x.jpg 2x" media="(min-width: 1200px)" />
+                                        <source srcset="./images/portfolio-tablet-2.jpg 1x, ./images/portfolio-tablet-2-2x.jpg 2x"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/portfolio-mobile-2.jpg 1x, ./images/portfolio-mobile-2-2x.jpg 2x"
+                                            media="(min-width: 320px)" />
+                                        <img src="./images/portfolio-mobile-2.jpg" alt="Баскетболисты" width="370">
+                                    </picture>
+
                                     <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</p>

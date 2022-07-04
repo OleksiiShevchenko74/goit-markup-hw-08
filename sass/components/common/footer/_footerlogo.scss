@@ -1,0 +1,27 @@
+.footer__logo {
+    color: var(--activ-link-but);
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    span {
+        text-align: center;
+        color: var(--white);
+        text-decoration: none;
+        font-family: var(--secondary-fons);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+    }
+}

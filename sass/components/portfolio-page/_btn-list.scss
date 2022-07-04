@@ -1,7 +1,20 @@
 .btn-list {
     display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    
+        &-item:nth-child(n + 4) {
+            margin-bottom: 0;
+        }
+    
+        @include tablet {
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+    
+        @include desktop {
+            margin-bottom: 50px;
+        }
 }
 
 .btn-list__btn {
@@ -32,4 +45,8 @@
 
 .btn-list__item:not(:last-child) {
     margin-right: 8px;
+}
+
+.btn-list__item {
+    margin-bottom: 15px;
 }
