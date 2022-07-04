@@ -1,24 +1,30 @@
 @import './utils/variables';
 @import './utils/common-utils';
 @import './utils/mixin';
+
+
 @import './components/common/header';
-@import './components/common/logo';
+@import './components/common/social-link';
+@import './components/common/modal';
+
+
 @import './components/main-page/hero';
 @import './components/main-page/features-section';
 @import './components/main-page/work-section';
 @import './components/main-page/team-section';
-@import './components/common/social-link';
 @import './components/main-page/clients-section';
-@import './components/common/address';
-@import './components/common/join-us';
-@import './components/common/form-subscribe';
-@import './components/common/modal';
-@import "./components/portfolio-page/btn-list";
-@import './components/portfolio-page/portfolio-list';
-@import './components/common/mobile-menu/mobile-menu';
-@import './components/common/mobile-menu/mobile-menu-items';
+
+
 @import './components/common/footer/footer';
 @import './components/common/footer/footercontact';
 @import './components/common/footer/footerform';
 @import './components/common/footer/footerlogo';
 @import './components/common/footer/footersocial';
+
+
+@import "./components/portfolio-page/btn-list";
+@import './components/portfolio-page/portfolio-list';
+
+
+@import './components/common/mobile-menu/mobile-menu';
+@import './components/common/mobile-menu/mobile-menu-items';
