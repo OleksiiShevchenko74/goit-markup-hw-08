@@ -20,20 +20,23 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
 
+    .features-list__item {
+        width: 100%;
+        @media screen and (min-width: 768px) {
+                width: calc((100% - 30px) / 2);
+            }
+        
+            @media screen and (min-width: 1200px) {
+                width: calc((100% - 90px) / 4);
+            }
+    }
 .features-list__item {
-    @media screen and (min-width: 481px) {
-        width: calc((100% - 30px) / 2);
-    }
-    
-    @media screen and (min-width: 1200px) {
-        width: calc((100% - 90px) / 4);
-    }
+    display: flex;
 }
 
 .features-list__item::before {
-    display: block;
+    display: flex;
     content: '';
     height: 120px;
     background-size: contain;
