@@ -595,12 +595,12 @@ img {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .hero__title {
     max-width: 360px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero__title {
     width: 696px;
     font-size: 44px;
@@ -677,20 +677,22 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
-
-@media screen and (min-width: 481px) {
-  .features-list__item {
+.features-list .features-list__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .features-list .features-list__item {
     width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .features-list__item {
+  .features-list .features-list__item {
     width: calc((100% - 90px) / 4);
   }
 }
 
 .features-list__item::before {
-  display: block;
+  display: flex;
   content: "";
   height: 120px;
   background-size: contain;
